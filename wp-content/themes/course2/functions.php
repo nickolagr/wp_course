@@ -143,4 +143,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 // here starts my code
+// add note type
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
+
+// add footer menu
+function register_my_menu() {
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
