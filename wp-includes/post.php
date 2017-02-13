@@ -6217,11 +6217,4 @@ function _filter_query_attachment_filenames( $clauses ) {
 
 	return $clauses;
 }
-//start of my code
-/**
- * Enables the Excerpt meta box in Page edit screen.
- */
-function wpcodex_add_excerpt_support_for_pages() {
-	add_post_type_support( 'page', 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' );
-}
-add_action( 'init', 'wpcodex_add_excerpt_support_for_pages' );
+
