@@ -87,7 +87,7 @@ get_the_title( $ancestor ); ?></a>
  </li>
  <?php
  // use wp_list_pages to list subpages of ancestor or current page
- wp_list_pages( $args );;
+ wp_list_pages( $args );
  // close the page-tree list
  ?>
  </ul>
